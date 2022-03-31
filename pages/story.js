@@ -18,7 +18,7 @@ function Home() {
           <div>
             <p>JUNE 9, 2069</p>
             <p>The Date of the Atomic Blast</p>
-            <p style={{marginTop: "50px"}}>It was becoming clear: there{"'"}s no longer a way for organic life to survive</p>
+            <p style={{marginTop: "50px"}}>It was becoming clear: there&apos;s no longer a way for organic life to survive</p>
             <p style={{marginTop: "17px"}}>As the Radiation spread even the Robots transformed into</p>
           </div>
           <img className={style.skullbotsLogo} src="/sk-logo.png"/>
@@ -55,10 +55,10 @@ function Home() {
 
         <div className={style.sectionOne}>
           <div>
-            <p>In the final days the World{"'"}s top scientists scrambled to salvage anything that could allow the humans to survive the radiation.</p>
+            <p>In the final days the World&apos;s top scientists scrambled to salvage anything that could allow the humans to survive the radiation.</p>
             <img src="/text2.png" className={style.textTwo}/>
             <p>In the final hours Professor Lamport made a risky proposal.</p>
-            <p style={{marginTop: "35px"}}>Nanobot Technology : with this he believed he could alter humanity's biochemical composition and transform them into machines.</p>
+            <p style={{marginTop: "35px"}}>Nanobot Technology : with this he believed he could alter humanity&apos;s biochemical composition and transform them into machines.</p>
           </div>
           <div className={style.rightHand}>
             <img className={style.partTwo} src="/part2.png"/>
@@ -75,7 +75,7 @@ Even when activated with the max amount of Bolt the survival rate remained fixed
 
           <img className={style.textThree} src="/text3.png"/>
 
-          <p>Now all humans must drink Professor Lamport's Nanobot Serum to survive.</p>
+          <p>Now all humans must drink Professor Lamport&apos;s Nanobot Serum to survive.</p>
         </div>
       </div>
 
@@ -140,7 +140,7 @@ Even when activated with the max amount of Bolt the survival rate remained fixed
         <div className={style.footerGrid}>
           <div>
             <p>!! Be Aware !!</p>
-            <p>Consuming the Nanobot Serum may drain your bolt or make you filthy rich. Only those brave enough to drink the serum will gain access to Hell. Drink enough serum and rule Hell by Lucifer{"'"}s side.</p>
+            <p>Consuming the Nanobot Serum may drain your bolt or make you filthy rich. Only those brave enough to drink the serum will gain access to Hell. Drink enough serum and rule Hell by Lucifer&apos;s side.</p>
           </div>
         </div>
         <div className={style.footerInfo}><img src="/info.png"/></div>
