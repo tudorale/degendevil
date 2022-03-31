@@ -1,0 +1,359 @@
+.howWrapper {
+    background: url("/how-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.innerHow {
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.green {
+    color: #007e0a !important;
+    -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .purple {
+        color: #9000d3 !important;
+        -webkit-text-stroke-width: 0.9px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .blue {
+        color: #00cec3 !important;
+        -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .red{
+        color: #ff3737 !important;
+        -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .success{
+        color: #09ff1e !important;
+    }
+    
+    .failed{
+        color: #ff0000 !important;
+    }
+  
+    .darkRed {
+      color: var(--red) !important;
+    }
+  
+    .greenLight {
+      color: #00cf11 !important;
+      }
+      
+      .purpleLight {
+          color: #ae00ff !important;
+      }
+      
+      .blueLight {
+          color: #00fff2 !important;
+      }
+
+.howText{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.step1{
+    margin-top: 50px;
+}
+
+.wallets {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.wallets div {
+    width: auto;
+    height: 45px;
+    background: #404144;
+    border-radius: 6px;
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallets div span{
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.wallets div img {
+    width: 26px;
+}
+
+.step2{
+    margin-top: 50px;
+}
+
+.serumsGrid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    "f v c"
+    "h h h"
+    "e . l"
+    ;
+}
+
+.horizontal{
+    grid-area: h;
+    width: 100%;
+}
+
+.vertical{
+    grid-area: v;
+    margin: 0 auto;
+    position: relative;
+    top: 160px;
+}
+
+.step2Finality{
+    grid-area: f;
+}
+
+.step2Epoch{
+    grid-area: e;
+}
+
+.step2Lamport{
+    grid-area: l;
+    justify-content: end;
+}
+
+.step2Cluster img, .step2Lamport img{
+    margin-left: 50px;
+}
+
+.step2Epoch img {
+    width: 165px !important;
+    margin-left: 10px;
+}
+
+.serumsGrid div{
+    width:fit-content;
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-template-areas: "img text";
+    align-items: center;
+}
+
+.serumImage{
+    grid-area: img;
+}
+
+.serumInfo {
+    grid-area: text;
+}
+
+.step2Cluster{
+    grid-area: c;
+    justify-content: end;
+    width:fit-content;
+    display: grid;
+    grid-template-columns: auto auto !important;
+    grid-template-areas: "text img" !important;
+    align-items: center;
+}
+
+.step2Lamport {
+    grid-template-columns: auto auto !important;
+    grid-template-areas: "text img" !important;
+}
+
+.serumsGrid div img{
+    width: 140px;
+}
+
+.serumsGrid div .serumInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    left: 20px;
+}
+
+.serumInfo p {
+    margin-top: 8px;
+}
+
+.serumType {
+    color: #FF0000;
+    font-size: 2.1rem;
+}
+
+.step3 {
+    margin-top: 50px;
+}
+
+.outcomes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.outcomes div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.outcome {
+    display: flex;
+    flex-direction: column !important;
+    align-items: start !important;
+    margin-left: 30px;
+    margin-top: -10px;
+    padding-right: 20px;
+}
+
+.outcome p{
+    margin-top: 10px;
+}
+
+.outcome p:nth-child(1){
+    font-size: 2.15rem;
+}
+
+.failedOutcome {
+    border-radius: 50%;
+    width: 160px;
+    opacity: 0.7;
+}
+
+.successOutcome {
+    width: 140px;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1275px){
+    .innerHow {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+    .vertical, .horizontal, .separator {
+        display: none;
+    }
+
+    .serumsGrid {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        "f"
+        "e"
+        "c"
+        "l"
+        ;
+    }
+
+    .step2Cluster img, .step2Lamport img{
+        margin-left: 30px;
+    }
+
+    .step2Cluster, .step2Lamport{
+        margin-left: 20px;
+    }
+
+    .outcomes {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 50px;
+    }
+
+    .addSWrapper{
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 730px){
+    .wallets {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .serumsGrid{
+        margin-top: 50px;
+    }
+
+    .serumsGrid div{
+        grid-template-columns: auto;
+        margin-top: 10px;
+        grid-template-areas:
+        "img" 
+        "text"
+        !important;
+    }
+
+    .serumInfo {
+        margin-top: 0px !important;
+    }
+    
+    .step2Cluster{
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+        "img" 
+        "text"
+        !important;
+        margin-left: 0px;
+    }
+    
+    .step2Lamport {
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+        "img" 
+        "text"
+        !important;
+        margin-left: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 430px){
+    .wallets {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 6);
+    }
+
+    .outcomes div {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .outcome {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}

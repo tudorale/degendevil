@@ -1,0 +1,56 @@
+.faqWrapper {
+    background: url("/how-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.innerFaq {
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.faqTitle{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.faqs {
+    margin-top: 70px;
+}
+
+.faqs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.question {
+    color: red;
+    margin-bottom: 25px;
+}
+
+.faqs div svg {
+    margin-top: 40px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1060px){
+    .innerFaq {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .faqs div p{
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .faqs div p{
+        padding-right: 0px;
+    }
+}

@@ -1,0 +1,245 @@
+.serumPage {
+    background: linear-gradient(rgba(0.3, 0.3, 0.3, 0.3), rgba(0.3, 0.3, 0.3, 0.3)), url("/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+    .green {
+        color: #007e0a !important;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: #1E0202
+    }
+    
+    .purple {
+        color: #9000d3 !important;
+        -webkit-text-stroke-width: 0.9px;
+        -webkit-text-stroke-color: #1E0202
+    }
+    
+    .blue {
+        color: #00cec3 !important;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: #1E0202
+    }
+    
+    .red{
+        color: #ff3737 !important;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: #1E0202
+    }
+    
+    .success{
+        color: #09ff1e !important;
+    }
+    
+    .failed{
+        color: #ff0000 !important;
+    }
+
+.innerWrapper2 {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+}
+
+.serumWrapper2 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.additionalWrapper2{
+    display: flex;
+}
+
+.innerWrapper2 .graySerum{
+    width: 310px;
+    margin-left: 50px;
+    transition: all 400ms linear;
+}
+
+.greenSerum {
+    width: 314px;
+    margin-left: -509px;
+    margin-top: -5.5px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all 400ms linear;
+}
+
+/* #0FD50A */
+
+.activateSerum{
+    text-align: center;
+    border: 2px dashed #027400;
+    margin-top: 50px;
+    color: #027400;
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+    transition: color 300ms ease;
+}
+
+.activateGlow {
+    position: absolute;
+    height: 42px;
+    margin-top: 0px;
+    width: 205px;
+    margin-left: 0px;
+    transition: all 350ms ease;
+    opacity: 0;
+    z-index: 2;
+    background-color: transparent;
+    border: 2px dashed #0FD50A;
+    box-shadow: 0px 0px 20px #0FD50A;
+}
+
+.click{
+    text-align: center;
+    color: #027400;
+    transition: all 450ms linear;
+    padding: 13px 10px 5px 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.recent {
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.transformations2{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    border: 2px dashed #FF0000;
+    padding: 10px 70px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.transformations2 div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.transformations2 svg {
+    width: 600px;
+    margin: 0 auto;
+    margin-left: 45px;
+}
+
+.transformations2 div img{
+    width: 26px;
+    margin-right: 25px;
+}
+
+.showMore2 {
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.blood {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 835px){
+    .transformations2{
+        padding: 10px 30px;
+    }
+
+    .greenSerum {
+        margin-left: -470px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .serumDrank {
+        display: none;
+    }
+
+    .innerWrapper2{
+        margin-top: 30px;
+    }
+
+    .innerWrapper2 .graySerum{
+        width: 270px;
+    }
+
+    .greenSerum {
+        margin-left: -331px;
+        width: 270px;
+        margin-top: -4px;
+    }
+}
+
+@media only screen and (max-width: 444px){
+    .innerWrapper2{
+        margin-top: 80px;
+    }
+
+    .transformations2 {
+        width: 330px;
+        padding-left: 20px;
+    }
+
+    .transformations2 div {
+        width: 300px;
+    }
+    
+    .innerWrapper2 .graySerum{
+        width: 250px;
+    }
+
+    
+    .greenSerum {
+        margin-left: -263px;
+        width: 250px;
+        margin-top: -3px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .innerWrapper2{
+        margin-top: 80px;
+    }
+
+    .transformations2 {
+        width: 280px;
+        padding-left: 20px;
+    }
+
+    .transformations2 div {
+        width: 240px;
+    }
+    
+    .innerWrapper2 .graySerum{
+        width: 250px;
+    }
+
+    
+    .greenSerum {
+        margin-left: -251px;
+        width: 251px;
+    }
+}

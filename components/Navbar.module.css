@@ -1,0 +1,150 @@
+.navbar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 992;
+}
+
+.navBg, .secondClass {
+    position: absolute;
+    width: 100%;
+}
+
+.secondClass {
+    opacity: 0;
+}
+
+.logo {
+    width: 270px;
+    margin: 10px 0px 0px -25px;
+    cursor: pointer;
+}
+
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.links{
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.links p{
+    font-family: "Roboto";
+    color: var(--red);
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.links svg {
+    margin: 0 7px;
+}
+
+.logoWrapper {
+    position: relative;
+    left: 50px;
+}
+
+.logoWrapper div{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.logoWrapper div p{
+    margin-left: 15px;
+}
+
+.hamburger{
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+    top: 20px;
+    margin-right: 18px;
+    display: none;
+}
+
+.line{
+    width: 30px;
+    margin: 5px 0px;
+    height: 3px;
+    background: var(--red);
+}
+
+/* RESPONSIVENESSSS */
+
+@media only screen and (max-width: 950px){
+    .logo {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 730px){
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo {
+        width: 180px;
+        margin-top: 5px;
+    }
+
+    .logoWrapper {
+        left: 35px;
+        z-index: 889;
+    }
+
+    .navBg, .secondClass {
+        display: none;
+    }
+
+    .navWrapper{
+        flex-direction: row;
+    }
+
+    .links{
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        width: fit-content;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-top: 110px;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        margin-right: 0px;
+        align-items: center;
+        transition: all 300ms linear;
+        position: absolute;
+        z-index: 888;
+        left: -400px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .links svg {
+        margin: 10px 7px;
+    }
+
+    .links p{
+        margin: 20px 0px;
+    }
+
+    .logoWrapper div{
+        margin-top: 5px;
+    }
+    
+    .logoWrapper div p{
+        font-size: 1.7rem;
+    }
+    
+}

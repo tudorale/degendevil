@@ -1,0 +1,163 @@
+.deathWrapper {
+    background: url("/blood4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.deathInnerWrapper {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.failureImg {
+    border-radius: 50%;
+    opacity: 0.4;
+    width: 250px;
+}
+
+.deathInfo {
+    color: #ff0000;
+    margin-top: 20px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.deathBtn {
+    text-align: center;
+    border: 3px dashed #D31313;
+    margin-top: 30px;
+    background-color: black;
+    width: fit-content;
+    padding: 2.5px 50px;
+}
+
+.loadBar {
+    width: 350px;
+    height: 7px;
+    margin-top: 55px;
+    background: #d313134f;
+}
+
+.innerLoadBar{
+    width: 0%;
+    height: 7px;
+    transition: all 7500ms linear;
+    background: #D31313;
+}
+
+
+/* SUCCESS */
+
+.successWrapper {
+    background: linear-gradient(rgba(0.3, 0.3, 0.3, 0.3), rgba(0.3, 0.3, 0.3, 0.3)), url("/blood3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.successInnerWrapper {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.successImg {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.successInfo {
+    color: #0dd50a;
+    margin-top: 40px;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.summonGranted {
+    color: #0dd50a;
+    margin-top: 20px;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.successBtn {
+    text-align: center;
+    border: 3px dashed #0dd50a;
+    margin-top: 30px;
+    color: #0dd50a;
+    background-color: black;
+    width: fit-content;
+    padding: 2.5px 40px;
+    cursor: pointer;
+}
+
+.successLoadBar {
+    width: 350px;
+    height: 7px;
+    margin-top: 55px;
+    background: #0dd50a38;
+}
+
+.successInnerLoadBar{
+    width: 0%;
+    height: 7px;
+    transition: all 7500ms linear;
+    background: #0dd50a;
+}
+
+
+/* DEATH RESPONSIVE */
+
+@media only screen and (max-width: 1024px){
+    .deathInnerWrapper {
+        margin-top: 100px;
+    }
+    
+    .failureImg {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .loadBar {
+        width: 270px;
+    }
+    .deathInfo {
+        font-size: 2.1rem;
+    }
+    
+}
+
+/* SUCCESS RESPONSIVE */
+
+@media only screen and (max-width: 1024px){
+    .successInnerWrapper {
+        margin-top: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .successLoadBar {
+        width: 270px;
+    }
+
+    .successInfo {
+        font-size: 2rem;
+    }
+    
+}

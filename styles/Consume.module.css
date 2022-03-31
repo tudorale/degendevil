@@ -1,0 +1,193 @@
+.consumeWrapper {
+    background: url("/blood4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.green {
+    color: #007e0a !important;
+    -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .purple {
+        color: #9000d3 !important;
+        -webkit-text-stroke-width: 0.9px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .blue {
+        color: #00cec3 !important;
+        -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .red{
+        color: #ff3737 !important;
+        -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .success{
+        color: #09ff1e !important;
+    }
+    
+    .failed{
+        color: #ff0000 !important;
+    }
+  
+    .darkRed {
+      color: var(--red) !important;
+    }
+  
+    .greenLight {
+      color: #00cf11 !important;
+      }
+      
+      .purpleLight {
+          color: #ae00ff !important;
+      }
+      
+      .blueLight {
+          color: #00fff2 !important;
+      }
+  
+
+.consumeGrid{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "f e c l";
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-left: -20px;
+    padding-bottom: 50px;
+}
+
+.consumeGrid div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consumeGrid div p{
+    color: #FF0000;
+}
+
+
+.finalityConsume {
+    grid-name: f;
+}
+
+.epochConsume {
+    grid-name: e;
+}
+
+.clusterConsume {
+    grid-name: c;
+}
+
+.lamportConsume {
+    grid-name: l;
+}
+
+.consumeGrid div .nameConsume{
+    font-size: 2.1rem;
+}
+
+.consumeGrid .epochConsume .nameConsume{
+    color: #3E0559;
+}
+
+.consumeGrid .clusterConsume .nameConsume{
+    color: #005E59;
+}
+
+.consumeGrid .lamportConsume .nameConsume{
+    color: #05590C;
+}
+
+.consumeGrid div div img{
+    width: 221px;
+    margin: 20px 0px 20px 30px;
+}
+
+.consumeGrid .finalityConsume div img {
+    width: 226px !important;
+}
+
+.consumeGrid .lamportConsume div img {
+    width: 228px !important;
+}
+
+.consumeGrid div .percentageConsume {
+    font-size: 3.7rem;
+}
+
+.consumeGrid div .costConsume {
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+.blood2{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.consumerBackground{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: auto;
+    top: 0;
+    filter: opacity(0.4);
+}
+
+.consumeButton {
+    color: #FF0000;
+    border: 2.3px dashed #FF0000;
+    cursor: pointer;
+    padding: 3px 40px;
+    margin-top: 20px;
+    transition: all 350ms linear;
+}
+
+.consumeButton:hover {
+    border-color: #0FD50A;
+    color: #0FD50A;
+}
+
+
+@media only screen and (max-width: 1180px){
+    .consumeGrid{
+        grid-template-columns: 300px 300px;
+        grid-template-areas: 
+        "f e"
+        "c l" 
+        ;
+        grid-row-gap: 100px;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .consumeGrid{
+        grid-template-columns: 300px;
+        grid-template-areas: 
+        "f"
+        "e"
+        "c"
+        "l"
+        ;
+        grid-row-gap: 100px;
+        padding-bottom: 0px;
+    }
+}

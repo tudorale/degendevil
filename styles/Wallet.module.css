@@ -1,0 +1,279 @@
+
+.innerWrapper {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 70px;
+}
+
+.serumWrapper {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.additionalWrapper {
+    display: flex;
+}
+
+.scientist{
+    margin-left: 380px;
+    margin-top: 0px;
+    z-index: -1;
+    position: absolute;
+    display: flex;
+}
+
+.scientist img{
+    width: 450px;
+    transition: all 500ms linear;
+}
+
+.scientistRed {
+    opacity: 1;
+}
+
+.scientistGreen {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+.scientistOverlay {
+    width:600px;
+    height: 450px;
+    position: absolute;
+    z-index: 5;
+    margin-top: 40px;
+    margin-left: 230px;
+    opacity: 0;
+}
+
+.serumRed img {
+    width: 310px;
+}
+
+.serumGreen img{
+    width: 293px;
+}
+
+.innerWrapper .additionalWrapper .serumWrapper img {
+    margin-left: 35px;
+    transition: all 500ms linear;
+}
+
+.serumGreen {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 17px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 500ms linear;
+}
+
+.selectWallet {
+    text-align: center;
+    border: 2px dashed #D31313;
+    margin-top: 50px;
+    width: fit-content;
+    padding: 5px 20px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 400ms linear;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.recent {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.transformations{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.transformations div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.transformations svg {
+    width: 600px;
+    margin: 0 auto;
+    margin-left: 45px;
+}
+
+.transformations div img{
+    width: 26px;
+    margin-right: 25px;
+}
+
+.showMore {
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.walletLinks {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+}
+
+.walletLinks a{
+    color: var(--red);
+    font-size: 1.6rem;
+    margin: 0 15px;
+}
+
+.green {
+    color: #007e0a !important;
+    -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .purple {
+        color: #9000d3 !important;
+        -webkit-text-stroke-width: 0.9px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .blue {
+        color: #00cec3 !important;
+        -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .red{
+        color: #ff3737 !important;
+        -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: #1E0202
+    }
+    
+    .success{
+        color: #09ff1e !important;
+    }
+    
+    .failed{
+        color: #ff0000 !important;
+    }
+  
+    .darkRed {
+      color: var(--red) !important;
+    }
+  
+    .greenLight {
+      color: #00cf11 !important;
+      }
+      
+      .purpleLight {
+          color: #ae00ff !important;
+      }
+      
+      .blueLight {
+          color: #00fff2 !important;
+      }
+  
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1000px){
+    .scientist, .scientistRed, .scientistGreen {
+        display: none;
+    }
+
+    .scientistOverlay{
+        width: 240px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .drank {
+        display: none;
+    }
+
+    .transformations {
+        width: 430px;
+    }
+
+    .transformations svg {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .scientistOverlay{
+        width: 240px;
+        height: 270px;
+        margin-left: 120px;
+    }
+
+    .serumGreen {
+        margin-left: 42px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .transformations {
+        width: 350px;
+    }
+
+    .serumGreen {
+        margin-left: 22px;
+        margin-top: 14px;
+    }
+
+    .serumGreen img {
+        width: 255px !important;
+    }
+
+    .transformations svg {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .innerWrapper img {
+        width: 270px;
+        margin-left: 35px;
+    }
+    .scientistOverlay{
+        width: 190px;
+        height: 230px;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .transformations {
+        width: 270px;
+    }
+
+    .transformations svg {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .walletLinks {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .walletLinks a{
+        color: var(--red);
+        font-size: 1.6rem;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .serumGreen {
+        margin-left: 0px;
+    }
+}
