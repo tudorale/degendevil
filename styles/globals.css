@@ -24,13 +24,15 @@ a{
   text-decoration: none;
   cursor: pointer;
   color: var(--red);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #1E0202;
 }
 
 p{
   color: var(--red);
   font-size: 1.8rem;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #1E0202
+  -webkit-text-stroke-color: #1E0202;
 }
 
 .green {

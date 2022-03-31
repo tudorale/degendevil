@@ -24,7 +24,7 @@
 .faqs div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 50px;
 }
 
@@ -37,6 +37,7 @@
     margin-top: 40px;
     width: 100%;
 }
+
 
 @media only screen and (max-width: 1060px){
     .innerFaq {
